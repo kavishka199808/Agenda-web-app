@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import EditAgenda from "./components/Edit-Agenda.component";
 import CreateAgenda from "./components/Create-Agenda.component";
 import AgendaList from "./components/list-Agenda.component";
-
+import report from "./components/report";
 
 
 
@@ -30,6 +30,8 @@ function App() {
         <Route path = "/" exact component = { AgendaList }/>
         <Route path = "/edit/:id" component = { EditAgenda }/> 
         <Route path = "/create" component = { CreateAgenda }/> 
+        <Route path = "/report"  component={ report } />
+
        
       
       
