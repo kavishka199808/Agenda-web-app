@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+import "./admin.css";
+import myprofile from './images/my.jpeg';
+
+import Sidebar from "./sidebar";
+
+
+
 
 
 
@@ -96,10 +103,27 @@ export default class AgendaList extends Component {
     render() {return (
          <div className = "container-fluid" >
             
+            <div>
+              <Sidebar/>
+             </div>
              
-             
-             <section className="home-section2">
-            
+             <section className="home-section">
+              
+             <nav>
+                <div className="sidebar-button">
+                  <i className="bx bx-menu sidebarBtn" />
+                  <span className="dashboard">Course</span>
+                </div>
+                <div className="search-box">
+                  <input type="text" placeholder="Search..." onChange = { this.handleSearchArea }></input>
+                  <i className="bx bx-search" />
+                </div>
+                <div className="profile-details">
+                  <img src={myprofile} alt="myprofile"/>
+                  <span className="admin_name">kavishka</span>
+                  <i className="bx bx-chevron-down" />
+                </div>
+              </nav>
 
               <div className='tablecontent'> 
                  <table  table class="table table-bordered">

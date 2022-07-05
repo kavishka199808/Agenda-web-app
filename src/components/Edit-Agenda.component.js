@@ -3,7 +3,11 @@ import axios from 'axios';
 import "react-datepicker/dist/react-datepicker.css";
 import swal from '@sweetalert/with-react'
 
+import "./admin.css";
+import myprofile from './images/my.jpeg';
 
+
+import Sidebar from "./sidebar";
 
 
 export default class EditAgenda extends Component {
@@ -110,12 +114,32 @@ export default class EditAgenda extends Component {
     render() {
         return ( <div >
 
-         <div className="home-section4">
+        
+             <div className="home-section3">
+
+                     <div>
+                       <Sidebar/>
+                    </div>
+
+                    <nav>
+                     <div className="sidebar-button">
+                     <i className="bx bx-menu sidebarBtn" />
+                     <span className="dashboard">Create Course</span>
+                   </div>
+
+            <div className="profile-details">
+                   <img src={myprofile} alt="myprofile"/>
+                   <span className="admin_name">kavishka</span>
+                  <i className="bx bx-chevron-down" />
+            </div>
+           </nav>
+        </div>
+
             
            
-            <div className='editeform'>
+            <div className='Agendaform'>
                        
-            <h3 > Edit Agenda </h3> <form onSubmit = { this.onSubmit } >
+            <h3 style={{marginLeft:'500px'}} > Edit Agenda </h3> <form onSubmit = { this.onSubmit } >
                 
             <div className = "form-group" style = { { marginBottom: '15px' }} >
             <label >  title: </label> 
@@ -160,7 +184,7 @@ export default class EditAgenda extends Component {
             className = "btn btn-primary"/>
             </div>
             
-             </form ></div></div> </div>
+             </form ></div></div>
         )
     }
 }

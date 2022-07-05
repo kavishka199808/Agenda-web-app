@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import swal from '@sweetalert/with-react'
 
+import "./admin.css";
+import myprofile from './images/my.jpeg';
 
+
+import Sidebar from "./sidebar";
 
 
 import "react-datepicker/dist/react-datepicker.css";
@@ -90,10 +94,30 @@ export default class CreateAgenda extends Component {
     render() {
         return ( <div>
 
+               <div className="home-section3">
+
+                    <div>
+                     <Sidebar/>
+                     </div>
+
+                   <nav>
+                      <div className="sidebar-button">
+                      <i className="bx bx-menu sidebarBtn" />
+                      <span className="dashboard">Create Course</span>
+                   </div>
+   
+                   <div className="profile-details">
+                      <img src={myprofile} alt="myprofile"/>
+                      <span className="admin_name">kavishka</span>
+                      <i className="bx bx-chevron-down" />
+                   </div>
+                </nav>
+              </div>
+
              
           <div className='Agendaform'>
              
-            <h3 > Create New Agenda </h3>
+            <h3  style={{marginLeft:'500px'}}> Create New Agenda </h3>
             <form onSubmit = { this.onSubmit } >
 
             

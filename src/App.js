@@ -16,7 +16,7 @@ import report from "./components/report";
 
 
 
-
+import "./components/app.css";
 
 
 
