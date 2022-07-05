@@ -4,11 +4,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 
-import EditCourse from "./components/Edit-Course.component";
-import CreateCourse from "./components/Create-Course.component";
-import CourseList from "./components/list-Course.component";
-import Courses from "./components/courses";
-import scourse from "./components/singlecourse";
+import EditAgenda from "./components/Edit-Agenda.component";
+import CreateAgenda from "./components/Create-Agenda.component";
+import AgendaList from "./components/list-Agenda.component";
 
 
 
@@ -19,7 +17,8 @@ import scourse from "./components/singlecourse";
 
 
 
-import "./components/app.css";
+
+
 
 function App() {
 
@@ -28,11 +27,10 @@ function App() {
        
        
         
-        <Route path = "/" exact component = { CourseList }/>
-        <Route path = "/edit/:id" component = { EditCourse }/> 
-        <Route path = "/create" component = { CreateCourse }/> 
-        <Route path = "/courses" component = { Courses }/> 
-        <Route path = "/scourse" component = { scourse }/> 
+        <Route path = "/" exact component = { AgendaList }/>
+        <Route path = "/edit/:id" component = { EditAgenda }/> 
+        <Route path = "/create" component = { CreateAgenda }/> 
+       
       
       
         

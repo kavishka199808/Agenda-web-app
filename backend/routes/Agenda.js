@@ -4,7 +4,7 @@ let Agenda = require('../models/Agenda.model');
 
 //retrive all data in database
 router.route('/').get((req, res) => {
-    Course.find()
+    Agenda.find()
         .then(Agenda => res.json(Agenda))
         .catch(Agenda => res.status(400).json('Error: ' + err));
 });
@@ -40,7 +40,7 @@ router.route('/add').post((req, res) => {
 
 // Get Data 
 router.route('/:id').get((req, res) => {
-    Course.findById(req.params.id)
+    Agenda.findById(req.params.id)
         .then(Agenda => res.json(Agenda))
         .catch(err => res.status(400).json('Error: ' + err));
 });
@@ -48,7 +48,7 @@ router.route('/:id').get((req, res) => {
 //Delete Data
 
 router.route('/:id').delete((req, res) => {
-    Course.findByIdAndDelete(req.params.id)
+    Agenda.findByIdAndDelete(req.params.id)
         .then(() => res.json('Agenda deleted.'))
         .catch(err => res.status(400).json('Error: ' + err));
 });

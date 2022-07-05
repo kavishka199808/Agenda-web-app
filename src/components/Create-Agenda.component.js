@@ -44,7 +44,7 @@ export default class CreateAgenda extends Component {
         
      onChangestatus(e) {
         this.setState({
-            Duration: e.target.value
+            status: e.target.value
         })
     }
 
@@ -117,7 +117,7 @@ export default class CreateAgenda extends Component {
 
              <div className = "form-group" >
             <label > status: </label>
-            <input type = "number"
+            <input type = "text"
             required className = "form-control"
             name = "status"
             placeholder = "Enter status"
@@ -127,7 +127,7 @@ export default class CreateAgenda extends Component {
 
             <div className = "form-group" >
             <label > date: </label> 
-            <input type = "number"
+            <input type = "text"
             required className = "form-control"
             name = "date"
             placeholder = "Enter date"

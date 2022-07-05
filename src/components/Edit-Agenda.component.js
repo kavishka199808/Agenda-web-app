@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "react-datepicker/dist/react-datepicker.css";
 import swal from '@sweetalert/with-react'
-import Agenda from '../../backend/models/Agenda.model';
+
 
 
 
@@ -66,7 +66,7 @@ export default class EditAgenda extends Component {
         
     onChangestatus(e) {
         this.setState({
-            Duration: e.target.value
+            status: e.target.value
         })
     }
 
@@ -137,7 +137,7 @@ export default class EditAgenda extends Component {
 
              <div className = "form-group" >
             <label >  status:  </label>
-            <input type = "number"
+            <input type = "text"
             required className = "form-control"
             name = "status"
             placeholder = "Enter status"
@@ -147,7 +147,7 @@ export default class EditAgenda extends Component {
 
             <div className = "form-group" >
             <label > date: </label> 
-            <input type = "number"
+            <input type = "text"
             required className = "form-control"
             name = "date:"
             placeholder = "Enter date"
