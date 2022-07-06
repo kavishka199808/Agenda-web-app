@@ -112,7 +112,7 @@ export default class AgendaList extends Component {
              <nav>
                 <div className="sidebar-button">
                   <i className="bx bx-menu sidebarBtn" />
-                  <span className="dashboard">Course</span>
+                  <span className="dashboard">Agenda</span>
                 </div>
                 <div className="search-box">
                   <input type="text" placeholder="Search..." onChange = { this.handleSearchArea }></input>

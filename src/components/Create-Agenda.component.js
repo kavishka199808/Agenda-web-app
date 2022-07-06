@@ -117,21 +117,21 @@ export default class CreateAgenda extends Component {
              
           <div className='Agendaform'>
              
-            <h3  style={{marginLeft:'500px'}}> Create New Agenda </h3>
+            <h3  style={{marginLeft:'200px'}}> Create New Agenda </h3>
             <form onSubmit = { this.onSubmit } >
 
             
             <div className = "form-group">
-            <label > title: </label> 
+            <label > Title : </label> 
             <input type = "text"
             required className = "form-control"
             name = "title"
-            placeholder = "title"
+            placeholder = "Enter Title"
             value = { this.state.title }
             onChange = { this.onChangetitle }/> </div > 
 
             <div className = "form-group" >
-            <label > description: </label> 
+            <label > Description: </label> 
             <input type = "text"
             required className = "form-control"
             name = "description"
@@ -140,7 +140,7 @@ export default class CreateAgenda extends Component {
             onChange = { this.onChangedescription}/></div >
 
              <div className = "form-group" >
-            <label > status: </label>
+            <label > Status: </label>
             <input type = "text"
             required className = "form-control"
             name = "status"
@@ -150,10 +150,10 @@ export default class CreateAgenda extends Component {
              </div >
 
             <div className = "form-group" >
-            <label > date: </label> 
-            <input type = "text"
+            <label > Time : </label> 
+            <input type = "time"
             required className = "form-control"
-            name = "date"
+            name = "time"
             placeholder = "Enter date"
             value = { this.state.date }
             onChange = { this.onChangedate }/> </div >
