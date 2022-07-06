@@ -15,10 +15,10 @@ const Mailer = props =>{
         e.preventDefault();
 
         emailjs.sendForm(
-            'service_kj2v9xh',
-            'template_a7zywev',
+            'service_8f8h2vo',
+            'template_fbn4o6h',
              e.target,
-            'JaAGl9BWdssqBvmvO'
+            'a-zVyymv-rSbBmaK1'
             ).then(res=>{
                    console.log(res);
             }).catch(err=>console.log(err));
