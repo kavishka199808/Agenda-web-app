@@ -10,6 +10,7 @@ import CreateAgenda from "./components/Create-Agenda.component";
 import AgendaList from "./components/list-Agenda.component";
 import report from "./components/report";
 import home from "./components/Home";
+import agendas from "./components/Agendas";
 
 
 
@@ -40,6 +41,7 @@ function App() {
         <Route path = "/create" component = { CreateAgenda }/> 
         <Route path = "/report"  component={ report } />
         <Route path = "/home" component={ home } />
+        <Route path = "/agendas" component={ agendas } />
 
        
       
