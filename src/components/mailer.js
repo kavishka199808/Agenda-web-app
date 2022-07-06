@@ -52,15 +52,15 @@ const Mailer = props =>{
                      <h2>Meet Our Brilliant and Knowledegeable Support Team</h2><br/>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
-                     <p><b>kavishka dilshan</b><br/>Course Management<br/>kavishka@gmail.com</p>
+                     <p><b>kavishka dilshan</b><br/>Agenda Management<br/>kavishka@gmail.com</p>
                      </div>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
-                     <p><b>Sumedha Lakmal</b><br/>Student Management<br/>sumedha@gmail.com</p>
+                     <p><b>Sumedha Lakmal</b><br/>Event Management<br/>sumedha@gmail.com</p>
                      </div>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
-                     <p><b>Janith lakmal</b><br/>Module Management<br/>janith@gmail.com</p>
+                     <p><b>Janith lakmal</b><br/>Employee Management<br/>janith@gmail.com</p>
                      </div>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
@@ -72,15 +72,15 @@ const Mailer = props =>{
                      </div>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
-                     <p><b>Gihan Madushan</b><br/>Lecturer Manage<br/>gihan@gmail.com</p>
+                     <p><b>Gihan Madushan</b><br/>Profile Manage<br/>gihan@gmail.com</p>
                      </div>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
-                     <p><b>Dulanjali disanayaka</b><br/>Exam Manage<br/>dulanjali@gmail.com</p>
+                     <p><b>Dulanjali disanayaka</b><br/>Report Manage<br/>dulanjali@gmail.com</p>
                      </div>
                      <div className='agent'>
                      <img src={agent} alt="contact" className='ag'/>
-                      <p><b>Tharidu Madushan</b><br/>Assigment Manage<br/>tharidu@gmail.com</p>
+                      <p><b>Tharidu Madushan</b><br/>Task Manage<br/>tharidu@gmail.com</p>
                      </div>
                      
                      </div>

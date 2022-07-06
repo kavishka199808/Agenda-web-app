@@ -63,14 +63,14 @@ export default class AgendaReport extends React.Component{
             <th > Title </th> 
             <th > Discription </th> 
             <th > Status </th>
-            <th> Date </th> 
+            <th> Time </th> 
              </tr >
             </thead> <tbody > {this.state.Agenda.map(props =>
                        <tr key = { props.title } >
                        <td > { props.title } </td> 
                        <td > { props.description } </td> 
                        <td > { props.status } </td> 
-                       < td > { props.date } </td>
+                       < td > { props.time } </td>
                     
                      </tr>
                 )

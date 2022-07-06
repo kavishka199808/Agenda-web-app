@@ -74,7 +74,7 @@ export default class AgendaList extends Component {
                     <td > { props.title } </td> 
                     <td > { props.description } </td> 
                     <td > { props.status } </td> 
-                    < td > { props.date } </td>
+                    < td > { props.time } </td>
                    
                      </tr>)
 

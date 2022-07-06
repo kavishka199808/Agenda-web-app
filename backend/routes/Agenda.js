@@ -17,7 +17,7 @@ router.route('/add').post((req, res) => {
     const title = req.body.title;
     const description = req.body.description;
     const status = req.body.status;
-    const date = req.body.date;
+    const time = req.body.time;
 
 
 
@@ -25,7 +25,7 @@ router.route('/add').post((req, res) => {
         title,
         description,
         status,
-        date,
+        time,
         
 
     });
@@ -61,7 +61,7 @@ router.route('/update/:id').post((req, res) => {
             Agenda.title = req.body.title;
             Agenda.description = req.body.description;
             Agenda.status = req.body.status;
-            Agenda.date = req.body.date;
+            Agenda.time = req.body.time;
             Agenda.save()
                 .then(() => res.json('Agenda updated!'))
                 .catch(err => res.status(400).json('Error: ' + err));

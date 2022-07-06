@@ -35,8 +35,8 @@ export default class Home extends Component {
             <a href className="hero-btn">Visit Us To Know More</a>
           </div>
         </section>
-        {/*  course --------- */}
-        <section className="course">
+        {/*  Events --------- */}
+        <section className="Event">
           <h1 style={{marginLeft:'30px'}}>Current Events We Offer</h1>
           <p>
                 We consistently provide the highest level of event planning, production, lighting, audio, and video services.<br/>
@@ -44,7 +44,7 @@ export default class Home extends Component {
           </p>
           <div className="row" style={{marginLeft:'30px'}}>
             
-            <div className="course-col">
+            <div className="Event-col">
               <h3>BEACH CONCETR</h3> 
               <p>A paragraph is a self-contained unit of discourse in writing<br />
                 dealing with a particular point or idea. A paragraph consists of
@@ -54,7 +54,7 @@ export default class Home extends Component {
             <a href="/agendas"><button type="button" class="btn btn-info btn-lg">See more</button></a>
             </div>
             
-            <div className="course-col">
+            <div className="Event-col">
               <h3>MRS FINALS</h3>
               <p>A paragraph is a self-contained unit of discourse in writing<br />
                 dealing with a particular point or idea. A paragraph consists of
@@ -63,7 +63,7 @@ export default class Home extends Component {
               </p>
               <a href="#"><button type="button" class="btn btn-info btn-lg">See more</button></a>	
             </div>
-            <div className="course-col">
+            <div className="Event-col">
               <h3>STATE AWARDS</h3>
               <p>A paragraph is a self-contained unit of discourse in writing<br />
                 dealing with a particular point or idea. A paragraph consists of

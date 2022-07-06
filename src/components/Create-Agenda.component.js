@@ -19,14 +19,14 @@ export default class CreateAgenda extends Component {
         this.onChangetitle = this.onChangetitle.bind(this);
         this.onChangedescription = this.onChangedescription.bind(this);
         this.onChangestatus = this.onChangestatus.bind(this);
-        this.onChangedate = this.onChangedate.bind(this);
+        this.onChangetime = this.onChangetime.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             title: '',
             description: '',
             status: '',
-            date: '',
+            time: '',
             Agenda: []
         }
     }
@@ -54,9 +54,9 @@ export default class CreateAgenda extends Component {
 
    
 
-     onChangedate(e) {
+     onChangetime(e) {
         this.setState({
-            date: e.target.value
+            time: e.target.value
         })
     }
 
@@ -68,7 +68,7 @@ export default class CreateAgenda extends Component {
             title: this.state.title,
             description: this.state.description,
             status: this.state.status,
-            date: this.state.date,
+            time: this.state.time,
         }
 
         console.log(Agenda);
@@ -81,7 +81,7 @@ export default class CreateAgenda extends Component {
                 title: "Done!",
                 description: "Agenda Successfully Added",
                 status: "success",
-                date: "Okay!"
+                time: "Okay!"
             })
             .then((value) => {
                 swal(window.location = '/');
@@ -154,9 +154,9 @@ export default class CreateAgenda extends Component {
             <input type = "time"
             required className = "form-control"
             name = "time"
-            placeholder = "Enter date"
-            value = { this.state.date }
-            onChange = { this.onChangedate }/> </div >
+            placeholder = "Enter time"
+            value = { this.state.time }
+            onChange = { this.onChangetime }/> </div >
 
             <div className = "form-group" >
             <input type = "submit"

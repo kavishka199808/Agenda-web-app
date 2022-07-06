@@ -17,7 +17,7 @@ const Agenda = props => ( <tr >
     <td > { props.Agenda.title } </td> 
     <td > { props.Agenda.description } </td>
     <td > { props.Agenda.status } </td> 
-    <td > { props.Agenda.date } </td> 
+    <td > { props.Agenda.time } </td> 
   
     <td ><Link to = { "/edit/" + props.Agenda._id } > Edit </Link> | <a href=" " onClick={() => { props.deleteAgenda(props.TimeTable._id) }}>Delete</a > </td > 
     </tr> 
@@ -132,7 +132,7 @@ export default class AgendaList extends Component {
                    <th > Title </th> 
                    <th > Description </th> 
                    <th > Status </th>
-                   <th> Date </th> 
+                   <th> Time </th> 
                    < th >  Agenda </th> 
                  </tr >
             </thead> <tbody > {this.state.Agenda.map(props =>
@@ -140,7 +140,7 @@ export default class AgendaList extends Component {
                     <td > { props.title } </td> 
                     <td > { props.description } </td> 
                     <td > { props.status } </td> 
-                    < td > { props.date } </td>
+                    < td > { props.time } </td>
                    
                      <td >
 
