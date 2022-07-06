@@ -9,6 +9,9 @@ import EditAgenda from "./components/Edit-Agenda.component";
 import CreateAgenda from "./components/Create-Agenda.component";
 import AgendaList from "./components/list-Agenda.component";
 import report from "./components/report";
+import home from "./components/Home";
+
+
 
 
 
@@ -36,7 +39,7 @@ function App() {
         <Route path = "/edit/:id" component = { EditAgenda }/> 
         <Route path = "/create" component = { CreateAgenda }/> 
         <Route path = "/report"  component={ report } />
-      
+        <Route path = "/home" component={ home } />
 
        
       
