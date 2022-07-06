@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
+
 require('dotenv').config();
 
 const app = express();
@@ -18,9 +19,9 @@ connection.once('open', () => {
 })
 
 const AgendaRouter = require('./routes/Agenda');
-
-
 app.use('/Agenda', AgendaRouter);
+
+
 
 
 app.listen(port, () => {
